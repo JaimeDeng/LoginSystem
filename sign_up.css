@@ -63,7 +63,8 @@ body .signUpFrame .emailFrame .fa-circle-question {
 body .signUpFrame .emailFrame .fa-circle-question::after {
   font-family: 微軟正黑體;
   content: "請輸入合法格式的email";
-  width: 8.7vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;
@@ -104,7 +105,8 @@ body .signUpFrame .nameFrame .fa-circle-question {
 body .signUpFrame .nameFrame .fa-circle-question::after {
   font-family: 微軟正黑體;
   content: "請輸入1~30個字符的名字";
-  width: 9.45vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;
@@ -150,7 +152,8 @@ body .signUpFrame .passwordFrame .fa-circle-question {
 body .signUpFrame .passwordFrame .fa-circle-question::after {
   font-family: 微軟正黑體;
   content: "請輸入8~20個字符的密碼";
-  width: 9.5vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;
@@ -198,7 +201,8 @@ body .signUpFrame .repeatPasswordFrame .fa-circle-question {
 }
 body .signUpFrame .repeatPasswordFrame .fa-circle-question::after {
   content: "請再輸入一次密碼";
-  width: 6.7vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;

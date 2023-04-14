@@ -43,7 +43,7 @@ body .loginFrame .emailFrame h6 {
 }
 body .loginFrame .emailFrame .fa-envelope {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   left: 1vh;
   display: inline-block;
 }
@@ -62,7 +62,8 @@ body .loginFrame .emailFrame .fa-circle-question {
 }
 body .loginFrame .emailFrame .fa-circle-question::after {
   content: "忘記是否有註冊帳號了嗎?";
-  width: 11.5vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;
@@ -106,7 +107,8 @@ body .loginFrame .namePasswordFrame .fa-circle-question {
 }
 body .loginFrame .namePasswordFrame .fa-circle-question::after {
   content: "忘記密碼了嗎?";
-  width: 6.6vw;
+  width: -moz-max-content;
+  width: max-content;
   padding: 2px;
   color: rgb(57, 68, 71);
   position: absolute;

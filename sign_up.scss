@@ -66,7 +66,7 @@ body{
                 &::after{
                     font-family: 微軟正黑體;
                     content: "請輸入合法格式的email";
-                    width: 8.7vw;
+                    width: max-content;
                     padding: 2px;
                     color: rgb(57, 68, 71);
                     position: absolute;
@@ -111,7 +111,7 @@ body{
                 &::after{
                     font-family: 微軟正黑體;
                     content: "請輸入1~30個字符的名字";
-                    width: 9.45vw;
+                    width: max-content;
                     padding: 2px;
                     color: rgb(57, 68, 71);
                     position: absolute;
@@ -160,7 +160,7 @@ body{
                 &::after{
                     font-family: 微軟正黑體;
                     content: "請輸入8~20個字符的密碼";
-                    width: 9.5vw;
+                    width: max-content;
                     padding: 2px;
                     color: rgb(57, 68, 71);
                     position: absolute;
@@ -212,7 +212,7 @@ body{
 
                 &::after{
                     content: "請再輸入一次密碼";
-                    width: 6.7vw;
+                    width: max-content;
                     padding: 2px;
                     color: rgb(57, 68, 71);
                     position: absolute;

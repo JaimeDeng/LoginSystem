@@ -43,7 +43,7 @@ body .signUpFrame .emailFrame h6 {
 }
 body .signUpFrame .emailFrame .fa-envelope {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   left: 1vh;
   display: inline-block;
 }
@@ -56,7 +56,7 @@ body .signUpFrame .emailFrame .email {
 }
 body .signUpFrame .emailFrame .fa-circle-question {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   right: 1vh;
   display: inline-block;
 }
@@ -130,7 +130,7 @@ body .signUpFrame .passwordFrame h6 {
 }
 body .signUpFrame .passwordFrame .fa-lock {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   left: 1vh;
   display: inline-block;
 }
@@ -143,7 +143,7 @@ body .signUpFrame .passwordFrame .password {
 }
 body .signUpFrame .passwordFrame .fa-circle-question {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   right: 1vh;
   display: inline-block;
 }
@@ -179,7 +179,7 @@ body .signUpFrame .repeatPasswordFrame h6 {
 }
 body .signUpFrame .repeatPasswordFrame .fa-lock {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   left: 1vh;
   display: inline-block;
 }
@@ -192,7 +192,7 @@ body .signUpFrame .repeatPasswordFrame .repeatPassword {
 }
 body .signUpFrame .repeatPasswordFrame .fa-circle-question {
   position: absolute;
-  top: 4.1vh;
+  bottom: 1vh;
   right: 1vh;
   display: inline-block;
 }

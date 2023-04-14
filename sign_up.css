@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(159, 177, 187);
+}
+body main {
+  width: 40vw;
+  margin: auto;
+  font-family: 微軟正黑體;
+  margin-top: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main h1 {
+  font-weight: 400;
+  font-size: 4vw 6vh;
+}
+body .signUpTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+body .signUpFrame {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+body .signUpFrame .emailFrame {
+  position: relative;
+  margin-bottom: 2vh;
+}
+body .signUpFrame .emailFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .signUpFrame .emailFrame .fa-envelope {
+  position: absolute;
+  top: 4.1vh;
+  left: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .emailFrame .email {
+  width: 100%;
+  padding: 0.9vh 4vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .signUpFrame .emailFrame .fa-circle-question {
+  position: absolute;
+  top: 4.1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .emailFrame .fa-circle-question::after {
+  font-family: 微軟正黑體;
+  content: "請輸入合法格式的email";
+  width: 8.7vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -7.5vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+body .signUpFrame .emailFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .signUpFrame .nameFrame {
+  position: relative;
+  margin-bottom: 2vh;
+}
+body .signUpFrame .nameFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .signUpFrame .nameFrame .name {
+  width: 100%;
+  padding: 0.9vh 1.2vh;
+  padding-right: 4vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .signUpFrame .nameFrame .fa-circle-question {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .nameFrame .fa-circle-question::after {
+  font-family: 微軟正黑體;
+  content: "請輸入1~30個字符的名字";
+  width: 9.45vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -8vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+body .signUpFrame .nameFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .signUpFrame .passwordFrame {
+  position: relative;
+  margin-bottom: 2vh;
+}
+body .signUpFrame .passwordFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .signUpFrame .passwordFrame .fa-lock {
+  position: absolute;
+  top: 4.1vh;
+  left: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .passwordFrame .password {
+  width: 100%;
+  padding: 0.9vh 4vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .signUpFrame .passwordFrame .fa-circle-question {
+  position: absolute;
+  top: 4.1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .passwordFrame .fa-circle-question::after {
+  font-family: 微軟正黑體;
+  content: "請輸入8~20個字符的密碼";
+  width: 9.5vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -8vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+body .signUpFrame .passwordFrame .fa-circle-question:active {
+  scale: 0.8;
+}
+body .signUpFrame .passwordFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .signUpFrame .repeatPasswordFrame {
+  position: relative;
+  margin-bottom: 4vh;
+}
+body .signUpFrame .repeatPasswordFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .signUpFrame .repeatPasswordFrame .fa-lock {
+  position: absolute;
+  top: 4.1vh;
+  left: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .repeatPasswordFrame .repeatPassword {
+  width: 100%;
+  padding: 0.9vh 4vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .signUpFrame .repeatPasswordFrame .fa-circle-question {
+  position: absolute;
+  top: 4.1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .signUpFrame .repeatPasswordFrame .fa-circle-question::after {
+  content: "請再輸入一次密碼";
+  width: 6.7vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -5.5vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+body .signUpFrame .repeatPasswordFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .signUpBtnFrame {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+body .signUpBtnFrame .signUpBtn {
+  width: 8vw;
+  height: 30px;
+  color: white;
+  background-color: rgb(78, 102, 116);
+  border-radius: 3px;
+  border: none;
+  transition: 0.5s;
+}
+body .signUpBtnFrame .signUpBtn:hover {
+  background-color: rgb(204, 199, 164);
+  color: black;
+}
+body .signUpBtnFrame .signUpBtn:active {
+  scale: 0.85;
+}/*# sourceMappingURL=sign_up.css.map */

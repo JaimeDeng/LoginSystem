@@ -1,0 +1,261 @@
+$textInputBorderRadius : 5px;
+$buttonBorderRadius : 3px;
+$bottonAndLogoColor : rgb(78,102,116);
+$bottonHoverColor : rgb(204, 199, 164);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(159,177,187);
+
+    main{
+        width: 40vw;
+        margin: auto;
+        font-family: 微軟正黑體;
+        margin-top: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-weight: 400;
+            font-size: 4vw 6vh;
+        }
+    }
+
+    .signUpTitle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh
+    }
+    .signUpFrame{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .emailFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            .fa-envelope{
+                position: absolute;
+                top: 4.1vh;
+                left: 1vh;
+                display: inline-block;
+            }
+            .email{
+                width: 100%;
+                padding: 0.9vh 4vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                top: 4.1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    font-family: 微軟正黑體;
+                    content: "請輸入合法格式的email";
+                    width: 8.7vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -7.5vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+    
+                &:hover::after{
+                    opacity: 1;
+                }
+            }
+            margin-bottom: 2vh;
+        }
+
+        .nameFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            
+            .name{
+                width: 100%;
+                padding: 0.9vh 1.2vh;
+                padding-right: 4vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                bottom:1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    font-family: 微軟正黑體;
+                    content: "請輸入1~30個字符的名字";
+                    width: 9.45vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -8vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                &:hover::after{
+                    opacity: 1;
+                }
+            }
+            margin-bottom: 2vh;
+        }
+
+        .passwordFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            .fa-lock{
+                position: absolute;
+                top: 4.1vh;
+                left: 1vh;
+                display: inline-block;
+            }
+            .password{
+                width: 100%;
+                padding: 0.9vh 4vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                top: 4.1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    font-family: 微軟正黑體;
+                    content: "請輸入8~20個字符的密碼";
+                    width: 9.5vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -8vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+    
+                &:active{
+                    scale: 0.8;
+                }
+    
+                &:hover::after{
+                    opacity: 1;
+                }
+            }
+            margin-bottom: 2vh;
+        }
+
+        .repeatPasswordFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            .fa-lock{
+                position: absolute;
+                top: 4.1vh;
+                left: 1vh;
+                display: inline-block;
+            }
+            .repeatPassword{
+                width: 100%;
+                padding: 0.9vh 4vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                top: 4.1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    content: "請再輸入一次密碼";
+                    width: 6.7vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -5.5vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+    
+                &:hover::after{
+                    opacity: 1;
+                }
+            }
+            margin-bottom: 4vh;
+        }
+
+    }
+
+    .signUpBtnFrame{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .signUpBtn{
+            width: 8vw;
+            height: 30px;
+            color: white;
+            background-color: $bottonAndLogoColor;
+            border-radius: $buttonBorderRadius;
+            border: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: $bottonHoverColor;
+                color: black;
+            }
+            &:active{
+                scale: 0.85;
+            }
+        }
+    }
+}

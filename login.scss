@@ -1,0 +1,203 @@
+$textInputBorderRadius : 5px;
+$buttonBorderRadius : 3px;
+$bottonAndLogoColor : rgb(78,102,116);
+$bottonHoverColor : rgb(204, 199, 164);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(159,177,187);
+
+    main{
+        width: 40vw;
+        margin: auto;
+        font-family: 微軟正黑體;
+        margin-top: 28vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-weight: 400;
+            font-size: 4vw 6vh;
+        }
+    }
+
+    .loginTitle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5vh
+    }
+    .loginFrame{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        .emailFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            .fa-envelope{
+                position: absolute;
+                top: 4.1vh;
+                left: 1vh;
+                display: inline-block;
+            }
+            .email{
+                width: 100%;
+                padding: 0.9vh 4vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                top: 4.1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    content: "忘記是否有註冊帳號了嗎?";
+                    width: 11.5vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -7vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: opacity 0s;
+                }
+    
+                &:active{
+                    scale: 0.8;
+                    
+                }
+    
+                &:hover::after{
+                    opacity: 1;
+                }
+
+                &:active::after{
+                    opacity: 0;
+                }
+            }
+            margin-bottom: 2vh;
+        }
+
+        .namePasswordFrame{
+            position: relative;
+            h6{
+                color: rgb(57, 68, 71);
+                margin-bottom: 1vh;
+            }
+            
+            .namePassword{
+                width: 100%;
+                padding: 0.9vh 1.2vh;
+                border-radius: $textInputBorderRadius;
+                border: 1px solid transparent;
+                box-sizing: border-box;
+            }
+            .fa-circle-question{
+                position: absolute;
+                bottom:1vh;
+                right: 1vh;
+                display: inline-block;
+
+                &::after{
+                    content: "忘記密碼了嗎?";
+                    width: 6.6vw;
+                    padding: 2px;
+                    color: rgb(57, 68, 71);
+                    position: absolute;
+                    border: 1px solid rgb(93, 111, 116);
+                    border-radius: 3px;
+                    background-color: beige;
+                    top: 3.5vh;
+                    right: -5vh;
+                    font-size: 12px;
+                    opacity: 0;
+                    transition: opacity 0s;
+                }
+
+                &:active{
+                    scale: 0.8;
+                }
+
+                &:hover::after{
+                    opacity: 1;
+                }
+
+                &:active::after{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .keepLoginFrame{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        display: flex;
+        position: relative;
+
+        .keepLoginBox{
+            width: 20px;
+            margin-right: 0.6vh;
+            border-radius: 5px;
+        }
+
+        .signUpBtn{
+            height: 100%;
+            width: 6vw;
+            position: absolute;
+            right:0;
+            color: white;
+            background-color: $bottonAndLogoColor;
+            border-radius: $buttonBorderRadius;
+            border: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: $bottonHoverColor;
+                color: black;
+            }
+            &:active{
+                scale: 0.85;
+            }
+        }
+    }
+    .loginBtnFrame{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .loginBtn{
+            width: 8vw;
+            height: 30px;
+            color: white;
+            background-color: $bottonAndLogoColor;
+            border-radius: $buttonBorderRadius;
+            border: none;
+            transition: 0.5s;
+
+            &:hover{
+                background-color: $bottonHoverColor;
+                color: black;
+            }
+            &:active{
+                scale: 0.85;
+            }
+        }
+    }
+}

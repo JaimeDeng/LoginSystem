@@ -1,0 +1,180 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(159, 177, 187);
+}
+body main {
+  width: 40vw;
+  margin: auto;
+  font-family: 微軟正黑體;
+  margin-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main h1 {
+  font-weight: 400;
+  font-size: 4vw 6vh;
+}
+body .loginTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+body .loginFrame {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+body .loginFrame .emailFrame {
+  position: relative;
+  margin-bottom: 2vh;
+}
+body .loginFrame .emailFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .loginFrame .emailFrame .fa-envelope {
+  position: absolute;
+  top: 4.1vh;
+  left: 1vh;
+  display: inline-block;
+}
+body .loginFrame .emailFrame .email {
+  width: 100%;
+  padding: 0.9vh 4vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .loginFrame .emailFrame .fa-circle-question {
+  position: absolute;
+  top: 4.1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .loginFrame .emailFrame .fa-circle-question::after {
+  content: "忘記是否有註冊帳號了嗎?";
+  width: 11.5vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -7vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0s;
+}
+body .loginFrame .emailFrame .fa-circle-question:active {
+  scale: 0.8;
+}
+body .loginFrame .emailFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .loginFrame .emailFrame .fa-circle-question:active::after {
+  opacity: 0;
+}
+body .loginFrame .namePasswordFrame {
+  position: relative;
+}
+body .loginFrame .namePasswordFrame h6 {
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
+body .loginFrame .namePasswordFrame .namePassword {
+  width: 100%;
+  padding: 0.9vh 1.2vh;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+body .loginFrame .namePasswordFrame .fa-circle-question {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  display: inline-block;
+}
+body .loginFrame .namePasswordFrame .fa-circle-question::after {
+  content: "忘記密碼了嗎?";
+  width: 6.6vw;
+  padding: 2px;
+  color: rgb(57, 68, 71);
+  position: absolute;
+  border: 1px solid rgb(93, 111, 116);
+  border-radius: 3px;
+  background-color: beige;
+  top: 3.5vh;
+  right: -5vh;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0s;
+}
+body .loginFrame .namePasswordFrame .fa-circle-question:active {
+  scale: 0.8;
+}
+body .loginFrame .namePasswordFrame .fa-circle-question:hover::after {
+  opacity: 1;
+}
+body .loginFrame .namePasswordFrame .fa-circle-question:active::after {
+  opacity: 0;
+}
+body .keepLoginFrame {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  display: flex;
+  position: relative;
+}
+body .keepLoginFrame .keepLoginBox {
+  width: 20px;
+  margin-right: 0.6vh;
+  border-radius: 5px;
+}
+body .keepLoginFrame .signUpBtn {
+  height: 100%;
+  width: 6vw;
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: rgb(78, 102, 116);
+  border-radius: 3px;
+  border: none;
+  transition: 0.5s;
+}
+body .keepLoginFrame .signUpBtn:hover {
+  background-color: rgb(204, 199, 164);
+  color: black;
+}
+body .keepLoginFrame .signUpBtn:active {
+  scale: 0.85;
+}
+body .loginBtnFrame {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+body .loginBtnFrame .loginBtn {
+  width: 8vw;
+  height: 30px;
+  color: white;
+  background-color: rgb(78, 102, 116);
+  border-radius: 3px;
+  border: none;
+  transition: 0.5s;
+}
+body .loginBtnFrame .loginBtn:hover {
+  background-color: rgb(204, 199, 164);
+  color: black;
+}
+body .loginBtnFrame .loginBtn:active {
+  scale: 0.85;
+}/*# sourceMappingURL=login.css.map */

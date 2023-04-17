@@ -33,13 +33,15 @@ body .signUpFrame {
   justify-content: center;
   position: relative;
 }
+body .signUpFrame label {
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(57, 68, 71);
+  margin-bottom: 1vh;
+}
 body .signUpFrame .emailFrame {
   position: relative;
   margin-bottom: 2vh;
-}
-body .signUpFrame .emailFrame h6 {
-  color: rgb(57, 68, 71);
-  margin-bottom: 1vh;
 }
 body .signUpFrame .emailFrame .fa-envelope {
   position: absolute;
@@ -84,10 +86,6 @@ body .signUpFrame .nameFrame {
   position: relative;
   margin-bottom: 2vh;
 }
-body .signUpFrame .nameFrame h6 {
-  color: rgb(57, 68, 71);
-  margin-bottom: 1vh;
-}
 body .signUpFrame .nameFrame .name {
   width: 100%;
   padding: 0.9vh 1.2vh;
@@ -125,10 +123,6 @@ body .signUpFrame .nameFrame .fa-circle-question:hover::after {
 body .signUpFrame .passwordFrame {
   position: relative;
   margin-bottom: 2vh;
-}
-body .signUpFrame .passwordFrame h6 {
-  color: rgb(57, 68, 71);
-  margin-bottom: 1vh;
 }
 body .signUpFrame .passwordFrame .fa-lock {
   position: absolute;
@@ -175,10 +169,6 @@ body .signUpFrame .passwordFrame .fa-circle-question:hover::after {
 body .signUpFrame .repeatPasswordFrame {
   position: relative;
   margin-bottom: 4vh;
-}
-body .signUpFrame .repeatPasswordFrame h6 {
-  color: rgb(57, 68, 71);
-  margin-bottom: 1vh;
 }
 body .signUpFrame .repeatPasswordFrame .fa-lock {
   position: absolute;

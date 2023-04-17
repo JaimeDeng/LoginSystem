@@ -6,6 +6,8 @@
 
 body {
   background-color: rgb(159, 177, 187);
+  height: 100vh;
+  width: 100vw;
 }
 body main {
   width: 40vw;
@@ -37,7 +39,9 @@ body .loginFrame .emailFrame {
   position: relative;
   margin-bottom: 2vh;
 }
-body .loginFrame .emailFrame h6 {
+body .loginFrame .emailFrame label {
+  display: inline-block;
+  font-size: 12px;
   color: rgb(57, 68, 71);
   margin-bottom: 1vh;
 }
@@ -88,7 +92,9 @@ body .loginFrame .emailFrame .fa-circle-question:active::after {
 body .loginFrame .namePasswordFrame {
   position: relative;
 }
-body .loginFrame .namePasswordFrame h6 {
+body .loginFrame .namePasswordFrame label {
+  display: inline-block;
+  font-size: 12px;
   color: rgb(57, 68, 71);
   margin-bottom: 1vh;
 }
@@ -137,9 +143,27 @@ body .keepLoginFrame {
   position: relative;
 }
 body .keepLoginFrame .keepLoginBox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 20px;
   width: 20px;
   margin-right: 0.6vh;
-  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gray;
+}
+body .keepLoginFrame .keepLoginBox:checked {
+  color: white;
+  background-color: rgb(66, 68, 77);
+}
+body .keepLoginFrame .keepLoginBox:checked::after {
+  content: "✔";
+  margin-left: 0.2vh;
+  font-size: 20px;
+  line-height: 20px;
 }
 body .keepLoginFrame .signUpBtn {
   height: 100%;

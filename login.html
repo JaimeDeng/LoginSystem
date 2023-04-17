@@ -11,30 +11,46 @@
 <body>
 
     <main>
+        
+        <!--login title-->
         <div class="loginTitle">
             <H1>Login Page</H1>
         </div>
+
+        <!-- login frame -->
         <div class="loginFrame">
+
+            <!-- email -->
             <div class="emailFrame">
-                <h6>Email</h3>
+                <label for = "email">Email</label>
                 <i class="fa-regular fa-envelope"></i>
-                <input class="email" type="text" placeholder="your email"/>
+                <input id = "email" class="email" type="text" placeholder="your email"/>
                 <i class="fa-regular fa-circle-question"></i>
             </div>
+
+            <!-- namePassword -->
             <div class="namePasswordFrame">
-                <h6>Name/Password</h3>
-                <input class="namePassword" type="text" placeholder="password"/>
+                <label for = "namePassword">Name/Password</label>
+                <input id = "namePassword" class="namePassword" type="text" placeholder="password"/>
                 <i class="fa-regular fa-circle-question"></i>
             </div>
+
+            <!-- keepLogin -->
             <div class="keepLoginFrame">
-                <input class = "keepLoginBox" type="checkbox">
-                <p>Keep login</p>
-                <button type="button" class="signUpBtn">Sign Up</button>
+                <input id = "keepLogin" class = "keepLoginBox" type="checkbox">
+                <label for = "keepLogin">Keep login</label>
+                <a href="/LoginSystem/sign_up.html">
+                    <button type="button" class="signUpBtn">Sign Up</button>
+                </a>
             </div>
+
         </div>
+
+        <!-- login button -->
         <div class="loginBtnFrame">
-            <button type="button" class="loginBtn">Log In</button>
+                <button type="button" class="loginBtn">Log In</button>
         </div>
+
     </main>
     
 </body>
